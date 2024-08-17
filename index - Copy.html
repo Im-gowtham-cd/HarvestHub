@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Direct Market Access for Farmers</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="iphone">
+        <header>
+            <div class="notch">
+                <div class="status-bar">
+                    <div class="status-icons">
+                        <span class="time" id="time">12:00  </span>
+                        <span class="camera"> </span>
+                        <span class="icon" id="battery" >100%</span>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <h1>HarvestHub</h1>
+        </header>
+       <main>
+            <section id="market-list">
+                <h2>Available Markets</h2>
+                <ul id="markets">
+                    <!-- Market items will be populated here -->
+                </ul>
+            </section>
+            <section id="market-details" class="hidden">
+                <h2>Market Details</h2>
+                <div id="details">
+                    <!-- Market details will be shown here -->
+                </div>
+                <button id="contact-button">Contact Market</button>
+            </section>
+            <section id="contact-form" class="hidden">
+                <h2>Contact Market</h2>
+                <form id="form">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                    <button type="submit">Send</button>
+                </form>
+            </section>
+        </main>
+        <footer style="justify-content: space-between;display: flex;">
+            <button id="login-button"><i class='bx bx-log-in-circle'></i></button>
+            <button id="home-button"><i class='bx bxs-home'></i></button>
+            <button id="back-button"><i class='bx bx-arrow-back'></i></button>
+        </footer>
+        <script src="script.js"></script>
+    </div>
+</body>
+</html>

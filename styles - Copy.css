@@ -1,0 +1,212 @@
+/* Reset default margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+.iphone {
+    width: 375px; /* iPhone width */
+    height: 667px; /* iPhone height */
+    margin: 0 auto;
+    border: 16px solid #333;
+    border-radius: 36px;
+    position: relative;
+    overflow: hidden;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    position: relative;
+}
+
+.status-bar {
+    background-color: transparent;
+    height: 20px;
+    position: absolute;
+    top: 0;
+    left: 0%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    font-size: 0.8em;
+}
+
+.camera {
+    background-color: black;
+    width: 40%;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    justify-content: center;
+}
+
+.status-icons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.icon {
+    font-size: 1.2em;
+}
+
+.time {
+    font-size: 1.2em;
+
+}
+
+main {
+    padding: 1em;
+    padding-top: 10px; /* Space for the header */
+    flex: 1;
+    overflow-y: auto;
+    
+}
+
+section {
+    margin-bottom: 1em;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 1em;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: #fff;
+    margin: 0.5em 0;
+    padding: 1em;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+li:hover {
+    background-color: #f1f1f1;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 0.75em 1.5em;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+    margin-top: 1em;
+   /* Full width on small screens */
+}
+
+button:hover {
+    background-color: #45a049;
+    transform: scale(1.1)
+}
+
+.hidden {
+    display: none;
+}
+
+
+
+/* Footer Styling */
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#home-button,
+#back-button,#login-button {
+    background-color: transparent;
+    color: black;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
+}
+
+#home-button:hover,
+#back-button:hover ,#login-button:hover{
+    transform: scale(1.1,1.1);
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    header {
+        font-size: 1.2em;
+        padding: 0.75em;
+    }
+
+    button {
+        padding: 0.5em;
+        font-size: 1em;
+    }
+
+    section {
+        padding: 0.75em;
+        margin: 0.5em 0;
+        margin-bottom: 150px;
+    }
+
+    li {
+        padding: 0.75em;
+    }
+
+    #contact-form input,
+    #contact-form textarea {
+        font-size: 1em;
+    }
+}
+
+/* Contact Form Styles */
+#contact-form form {
+    background-color: #fff;
+    padding: 1em;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#contact-form label {
+    display: block;
+    margin-bottom: 0.5em;
+    font-size: 1em;
+}
+
+#contact-form input,
+#contact-form textarea {
+    width: calc(100% - 1em);
+    padding: 0.75em;
+    margin-bottom: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+#contact-form textarea {
+    height: 150px;
+    resize: vertical;
+}
